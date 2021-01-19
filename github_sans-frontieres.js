@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Github Sans Frontieres
-// @namespace   https://github.com/whilei/dne
+// @namespace   https://github.com/whilei/userscripts
 // @description Imagine a Github without borders... a place unconstrained by arbitrary fences and pixelated delineations.
 // @icon        https://github.githubassets.com/pinned-octocat.svg
 // @author      whilei

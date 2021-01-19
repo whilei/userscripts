@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Github Repository Menu: Releases Link
-// @namespace   https://github.com/whilei/dne
+// @namespace   https://github.com/whilei/userscripts
 // @description Make pull request list items include branch names
 // @icon        https://github.githubassets.com/pinned-octocat.svg
 // @author      whilei

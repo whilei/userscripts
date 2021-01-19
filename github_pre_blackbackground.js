@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Github Pre Hacker
-// @namespace   https://github.com/whilei/dne
+// @namespace   https://github.com/whilei/userscripts
 // @description Nake un-syntaxed-declared code blocks look like real hacker stuff.
 // @icon        https://github.githubassets.com/pinned-octocat.svg
 // @author      whilei

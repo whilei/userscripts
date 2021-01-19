@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Github NoPro
-// @namespace   https://github.com/whilei/dne
+// @namespace   https://github.com/whilei/userscripts
 // @description Remove ProTips and noob hints from all Github pages.
 // @icon        https://github.githubassets.com/pinned-octocat.svg
 // @author      whilei
