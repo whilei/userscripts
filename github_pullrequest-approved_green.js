@@ -27,7 +27,7 @@
     }
 
 	function init() {
-        addGlobalStyle(".tampered-approved { color: var(--color-alert-success-text) !important; }");
+        addGlobalStyle(".tampered-approved { color: var(--color-text-success) !important; }");
 
         Array.prototype.filter.call(document.querySelectorAll("[aria-label$='review approval']"), function (el) {
             return !el.classList.contains("tampered-approved");
