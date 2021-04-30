@@ -27,7 +27,17 @@
     }
 
 	function init() {
-        addGlobalStyle(".timeline-comment { box-shadow: 2px 4px 5px 0px rgb(0, 0, 0); }");
+        addGlobalStyle(`
+.timeline-comment {
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+/*
+.avatar-user {
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.5) !important;
+    border-radius: 50% !important;
+}
+*/
+`);
 	}
 
 	// Page load.
