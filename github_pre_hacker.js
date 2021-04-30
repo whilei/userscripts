@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Github Pre Hacker
-// @namespace   https://github.com/whilei/userscripts
+// @namespace   https://github.com/whilei/dne
 // @description Nake un-syntaxed-declared code blocks look like real hacker stuff.
 // @icon        https://github.githubassets.com/pinned-octocat.svg
 // @author      whilei
@@ -16,10 +16,11 @@
     'use strict';
 	function init() {
         Array.prototype.filter.call(document.querySelectorAll("pre"), function (el) {
-            return !el.parentElement.classList.contains("highlight");
+            return !el.parentElement.classList.contains("highlight") && !el.classList.contains("CodeMirror-line");
 		}).forEach(function (el) {
             el.style.backgroundColor = "black";
             el.style.color = "white";
+            el.style.padding = "1em";
         });
 	}
 
