@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Github Sans Frontieres
-// @namespace   https://github.com/whilei/userscripts
+// @namespace   https://github.com/whilei/dne
 // @description Imagine a Github without borders... a place unconstrained by arbitrary fences and pixelated delineations.
 // @icon        https://github.githubassets.com/pinned-octocat.svg
 // @author      whilei
@@ -63,10 +63,12 @@
   --color-verified-badge-border: rgba(0,0,0,0) !important;
   --color-merge-box-warning-box-border: rgba(0,0,0,0) !important;
   --color-merge-box-neutral-icon-border: rgba(0,0,0,0) !important;
+  --color-merge-box-warning-icon-border: rgba(0,0,0,0) !important;
   --color-border-success:  rgba(0,0,0,0) !important;
   --color-alert-info-border:  rgba(0,0,0,0) !important;
   border-color: rgba(0,0,0,0) !important;
   border-bottom-color: rgba(0,0,0,0) !important;
+  --color-alert-warn-border: rgba(0,0,0,0) !important;
 }
 `);
 	}
