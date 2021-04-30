@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Stack[Overflow|Exchange]: Remove Blurby Sidebar Widgets
-// @namespace   https://github.com/whilei/userscripts
-// @description Make GitHub relative time elements also show absolute values
-// @icon        https://github.githubassets.com/pinned-octocat.svg
+// @name        Stack[Overflow|Exchange]: Remove Blurby Sidebar Widgets
+// @namespace   https://github.com/whilei/dne
+// @description Remove useless sidebar widgets from StackExchange sites
+// @icon        
 // @author      whilei
 // @copyright   2021+, whilei (https://github.com/whilei)
 // @license     CC-BY-NC-SA-4.0; https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
