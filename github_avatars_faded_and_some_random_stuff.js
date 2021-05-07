@@ -125,6 +125,10 @@ summary.Header-link span.dropdown-caret {
     // border-bottom-color: #46ea8e !important;
 }
 
+textarea#new_comment_field {
+height: 640px;
+}
+
 `);
 /*         var hover = new MouseEvent('mouseover', {
             // 'view': window,
