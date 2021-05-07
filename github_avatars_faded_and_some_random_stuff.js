@@ -126,7 +126,8 @@ summary.Header-link span.dropdown-caret {
 }
 
 textarea#new_comment_field {
-height: 640px;
+height: 640px !important;
+max-height: 640px !important;
 }
 
 `);
