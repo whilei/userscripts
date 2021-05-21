@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Github Pull Request List Item: Links to PR Details (Files Changed, Commits)
-// @namespace   https://github.com/whilei/userscripts
+// @namespace   https://github.com/whilei/dne
 // @description Make pull request list items include branch names
 // @icon        https://github.githubassets.com/pinned-octocat.svg
 // @author      whilei
@@ -27,7 +27,7 @@
             var diffLink = document.createElement("a");
             diffLink.setAttribute("href", treeA.getAttribute("href") + "/files");
             diffLink.classList.add("tamper-filechange-link", "muted-link");
-            diffLink.innerHTML = "files changed ±";
+            diffLink.innerHTML = "files changed";
             diffLink.setAttribute("style", "padding: 0.2em 0.3em;");
 
             var commitsLink = document.createElement("a");
@@ -38,11 +38,11 @@
 
             var fancySentence = document.createElement("span");
             fancySentence.setAttribute("class", "tamper-filechange-span");
-            fancySentence.innerHTML = " with these";
+            fancySentence.innerHTML = " •"; /* ' with these' */
 
             openLine.appendChild(fancySentence);
             openLine.appendChild(commitsLink);
-            openLine.innerHTML += "and";
+            openLine.innerHTML += "•";
             openLine.appendChild(diffLink);
 		});
 	}
