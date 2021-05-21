@@ -35,8 +35,12 @@
 
         --text-normal: #9097ff !important; /* #6ebd58 green   #9097ff purple */
         --header-primary: rgb(150,50,150) !important; /* #91b4d9 light grayish blue   #ff0000*/
+        --interactive-muted: #9097ff !important; /* does blockquotes */
 
         font-size: 82% !important;
+        }
+        body {
+            /* border-top: 4px solid var(--text-normal); */
         }
         ::placeholder, body, button, input, select, textarea {
         font-family: mono !important;
@@ -59,6 +63,15 @@
         /* This handles the sidebar menu item (channels, etc.) */
         a div {
         font-size: inherit !important;
+        }
+        code.inline {
+        background-color: #1b273c !important;
+        color: #ef7fff !important; /* 42b1d2 */
+        }
+        .hljs {
+        background: #3a0c68 !important;
+        color: #ef7fff !important;
+        padding: 1.5em 2em !important;
         }
 
         `);
