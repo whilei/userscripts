@@ -71,21 +71,21 @@
         for (var i = 0; i < messageUsernames.length; i++) {
             var un = messageUsernames[i];
 
+            // bool
             // If an '@' exists as the first character, remove it and match against the resulting username value.
             // This handles replied-messages, which append the '@', but normal messages don't (and are uneffected).
-            if (needsImproving.indexOf(un.innerText.replace(/^@/, '')) >= 0) {
-                // Found one.
-                // console.log("Found a user to help", un);
+            var userMsgNeedsImprovement = needsImproving.indexOf(un.innerText.replace(/^@/, '')) >= 0;
 
-                // Dedupe: One kitten at a time, since this can be called repeately (via setInterval)
-                // Prepend the 'already-improved' class so it won't match the prefix-based selector for messageUsernames.
-                var cl = Array.from(un.classList);
-                un.classList.remove(...cl);
-                un.classList.add("already-improved");
-                un.classList.add(...cl);
+            // Dedupe: One kitten, one time; since this can be called repeately (via setInterval)
+            // Prepend an identifying class so it won't match the prefix-based selector for messageUsernames.
+            // We do this for all messages so that we don't have to handle more than once.
+            var cl = Array.from(un.classList);
+            un.classList.remove(...cl);
+            un.classList.add(userMsgNeedsImprovement ? "improver-improved" : "improver-ok");
+            un.classList.add(...cl);
 
-                improveMessageHandler(un);
-            }
+            // Found one.
+            if (userMsgNeedsImprovement) improveMessageHandler(un);
         }
     }
 
