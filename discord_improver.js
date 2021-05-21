@@ -42,7 +42,7 @@
     }
 
     // Why destroy when you can create?
-    function improveMessage(usernameEl) {
+    function improveMessageHandler(usernameEl) {
         // Normal messages.
         var contents = usernameEl.closest('div[class^="contents-"]');
         if (contents) {
@@ -77,11 +77,14 @@
                 // Found one.
                 // console.log("Found a user to help", un);
 
-                // Dedupe: One kitten at a time, since this can be called repeately (via setInterval).
-                if (un.classList.contains("already-improved")) continue;
+                // Dedupe: One kitten at a time, since this can be called repeately (via setInterval)
+                // Prepend the 'already-improved' class so it won't match the prefix-based selector for messageUsernames.
+                var cl = Array.from(un.classList);
+                un.classList.remove(...cl);
                 un.classList.add("already-improved");
+                un.classList.add(...cl);
 
-                improveMessage(un);
+                improveMessageHandler(un);
             }
         }
     }
