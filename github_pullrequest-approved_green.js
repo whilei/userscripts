@@ -27,13 +27,15 @@
     }
 
 	function init() {
-        addGlobalStyle(".tampered-approved { color: var(--color-text-success) !important; }");
 
-        Array.prototype.filter.call(document.querySelectorAll("[aria-label$='review approval']"), function (el) {
-            return !el.classList.contains("tampered-approved");
-		}).forEach(function (el) {
-            el.classList.add("tampered-approved");
-        });
+        addGlobalStyle(`
+        a[aria-label$="review approval"],a[aria-label$="review approvals"] {
+            color: var(--color-text-success) !important;
+        }
+        a[aria-label$="review requesting changes"] {
+            color: var(--color-text-warning) !important; /* danger */
+        }
+        `);
 	}
 
 	// Page load.
